@@ -1,0 +1,444 @@
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.header {
+    background-color: #f8cb2e;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+/* sticky wrapper */
+
+.top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 51px;
+}
+
+.navbar {
+    background: transparent;
+    z-index: 2;
+}
+
+/* Festava live */
+.navbar-brand,
+.navbar-brand:hover {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+}
+
+/* button */
+.button {
+    background-color: red;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    color: white;
+    font-size: 15px;
+    font-weight: 750;
+    line-height: normal;
+    transition: all 0.3s;
+    padding: 10px 20px;
+}
+
+.button:hover {
+    color: white;
+    background-color: rgb(135, 42, 42);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-color: white;
+    width: 30px;
+    height: 2px;
+}
+
+
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.top .navbar-nav .nav-link {
+    display: inline-block;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    /* position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px; */
+}
+
+.top .nav-link:hover {
+    color: red;
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar {
+        background-color: black;
+        z-index: 100;
+    }
+}
+
+/* section-1 */
+.section-1 {
+    position: relative;
+    overflow: hidden;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.section-overlay {
+    background-color: rgb(36, 29, 29);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.section-1 .container {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.section-1 .container .row {
+    height: 100%;
+    width: 100%;
+}
+
+.btn-list {
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+
+.share-btn {
+    background-color: red;
+    border-radius: 100px;
+    color: white;
+    text-align: center;
+    line-height: 35px;
+    font-size: 17px;
+    display: block;
+    height: 35px;
+    width: 35px;
+
+}
+
+.share-btn:hover {
+    background-color: #f8cb2e;
+    color: white;
+    animation: trance 4s linear infinite;
+}
+
+@keyframes trance {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.myvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+
+/* Section-2 */
+
+#sec-2 {
+    background-image: url(Screenshot\ 2025-02-22\ at\ 23-10-47\ edward-unsplash-blur.jpg\ \(JPEG\ Image\ 1920\ ×\ 1280\ pixels\)\ —\ Scaled\ \(72%\).png);
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+.padding {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.75);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 20px;
+    padding: 35px;
+}
+
+/* Section-3 */
+
+#sec-3 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#sec-3 h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+
+.art {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.artist-img {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+
+.artists-hover {
+    background-color: rgba(248, 203, 46, 0.75);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    margin: 20px;
+    padding: 35px;
+    transition: all 1s;
+    transform: translateY(100%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+}
+
+p strong {
+    color: white;
+    display: inline-block;
+    min-width: 190px;
+    margin-right: 20px;
+}
+
+.art:hover .artists-hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Section-4 */
+
+#sec-4 {
+    background-image: url(Screenshot\ 2025-02-22\ at\ 23-10-47\ edward-unsplash-blur.jpg\ \(JPEG\ Image\ 1920\ ×\ 1280\ pixels\)\ —\ Scaled\ \(72%\).png);
+    background-size: cover;
+}
+
+#sec-4 h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.bg-image {
+    background-image: url(96131.jpg);
+}
+
+.schedule-table {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.bg-image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: none;
+    position: relative;
+}
+
+/* Section-5 */
+#sec-5 {
+    background-color: rgb(227, 236, 240);
+}
+
+#sec-5 h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.box {
+    border-radius: 20px;
+    border: 5px black dotted;
+    position: relative;
+    padding: 40px;
+}
+
+small {
+    font-size: 16px;
+    font-weight: 800;
+
+}
+
+.off {
+    font-size: 16px;
+    font-weight: 800;
+    background-color: red;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.off span {
+    font-size: 160%;
+}
+
+p {
+    color: rgb(196, 184, 184);
+    font-size: 18px;
+}
+
+#sec-5 ul li {
+    padding: 10px;
+    color: rgb(146, 137, 137);
+    font-size: 18px;
+}
+
+
+/* section-6 */
+
+
+#sec-6 h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+#sec-6 .nav-button {
+    background-color: aqua;
+    padding: 15px;
+    border-radius: 100px;
+}
+
+
+
+
+
+
+
+.fm{
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 1rem 3rem rgb(95, 92, 92);
+}
+
+#contactform .form {
+    margin-bottom: 24px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    outline: none;
+}
+
+
+/* footer */
+
+/* footer-1 */
+
+footer {
+    background-color: black;
+}
+
+.footer-1 {
+    background-color: red;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.footer-1 h1 {
+    font-size: 45px;
+    font-weight: 800;
+}
+
+/* footer-2 */
+
+.f-head {
+    color: #f8cb2e;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.f-nav {
+    padding-left: 0;
+}
+
+.f-list {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.f-link {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.f-link1 {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+.f-link:hover {
+    color: red;
+}
+
+.b-1 {
+    color: white;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    height: 32px;
+    padding: 0 6px;
+    text-decoration: none;
+}
+
+/* footer-3 */
+
+.footer-3 {
+    margin-top: 70px;
+    border-top: 2px solid rgb(49, 46, 46);
+}
+
+.copy {
+    font-size: 17px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #ab9c67;
+
+}
+
+.copy a:hover {
+    color: red;
+}
